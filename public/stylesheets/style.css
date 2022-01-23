@@ -1,0 +1,68 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+.base{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/fsdlkfjalkj.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+}
+
+.platform{
+height: 80%;
+width: 90%;
+background-color: rgb(255, 255, 255,.4);
+border-radius: 50px;
+position: relative;
+top: 0;
+transition: 1s;
+display: flex;
+justify-content: center;
+/* align-items: center; */
+}
+
+.platform:focus{
+  background-color: rgb(255, 255, 255,.7);
+  box-shadow: 0px 0px 20px 10px white;
+  top: -10px;
+}
+
+.platform .test{
+  color: white;
+}
+
+.platform:focus .test{
+  color: black;
+}
+
+.username{
+  color: white;
+  margin-top: 10px;
+  /* background-color: black; */
+  height:30px;
+  width: 200px;
+  text-align: center;
+}
+
+.username img, .loginout img{
+  width: 20px;
+}
+
+.loginout{
+  margin-left: auto;
+  margin-right: 40px;
+}
+.loginout a{
+  color: white;
+  text-decoration: none;
+}
+.loginout a:hover{
+  color: white;
+  text-decoration: underline;
+}
