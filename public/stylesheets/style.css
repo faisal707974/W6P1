@@ -27,8 +27,8 @@ justify-content: center;
 /* align-items: center; */
 }
 
-.platform:focus{
-  background-color: rgb(255, 255, 255,.7);
+.platform:hover{
+  background-color: rgb(255, 255, 255,.9);
   box-shadow: 0px 0px 20px 10px white;
   top: -10px;
 }
@@ -65,4 +65,22 @@ justify-content: center;
 .loginout a:hover{
   color: white;
   text-decoration: underline;
+}
+
+.loginErrDiv{
+  border: #ff0000 solid 3px;
+}
+
+.loginErr{
+  color: #ff0000;
+  text-align: center;
+  margin: auto;
+}
+
+.logincontainer{
+  margin: auto;
+}
+
+.signupcontainer{
+  margin: auto;
 }

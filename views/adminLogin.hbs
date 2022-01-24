@@ -8,10 +8,10 @@
                <div class="myform form ">
                   <div class="logo mb-3">
                      <div class="col-md-12 text-center">
-                        <h1>Login</h1>
+                        <h1>Admin Login</h1>
                      </div>
                   </div>
-                  <form action="/login" method="post" name="login">
+                  <form action="/admin/adminlogin" method="post" name="login">
                      <div class="form-group">
                         <label for="exampleInputEmail1">User Name</label>
                         <input type="text" name="username" class="form-control" id="username" aria-describedby="emailHelp"
@@ -28,10 +28,7 @@
                         <p class="loginErr">Entered username or password is invalid</p>
                      </div>
                      {{/if}}
-
-                     <div class="form-group">
-                        <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
-                     </div>
+                     <br>
                      <div class="col-md-12 text-center ">
                         <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
                      </div>
@@ -40,12 +37,8 @@
                            <hr class="hr-or">
                            
                         </div>
-                     </div>
-                     
-                     <div class="form-group">
-                        <p class="text-center">Don't have account? <a href="/signup" id="signup">Sign up here</a></p>
-                     </div>
-                  </form>
+                     </div>       
+                     </form>
 
                </div>
             </div>
