@@ -19,6 +19,12 @@ module.exports={
                 resolve({status:false})
             }
         })
+    },
+
+    addUser : (userdata,callback)=>{
+        db.get().collection('user').insertOne(userdata).then((data)=>{
+            callback(true)
+        })
     }
 
 }

@@ -41,3 +41,14 @@ router.get('/logout',(req,res)=>{
   req.session.destroy()
   res.redirect('/admin/login')
 })
+
+router.get('/addNewUser',(req,res)=>{
+  res.render('addNewUser')
+})
+
+router.post('/addNewUser',(req,res)=>{
+  console.log(req.body)
+  adminHelpers.addUser(req.body,(result)=>{
+    res.redirect('/admin/addNewUser')
+  })
+})

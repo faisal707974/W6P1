@@ -1,0 +1,26 @@
+<form class="new-user-form" action="/admin/addNewUser" method="post">
+    <div>
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" id="UserName" aria-describedby="emailHelp" placeholder="Enter username">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    {{!-- <br>
+    <div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Example</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+    </div> --}}
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
