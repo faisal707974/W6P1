@@ -18,11 +18,11 @@
         </tr>
         {{#each users}}
         <tr>
-            <td>{{username}}</td>
-            <td>{{password}}</td>
-            <td>{{email}}</td>
+            <td>{{this.username}}</td>
+            <td>{{this._id}}</td>
+            <td>{{this.email}}</td>
             <td><a href=""><i class="fas fa-edit"></i></a></td>
-            <td><a href=""><i class="fas fa-trash"></i></a></td>
+            <td><a href="/admin/delete/{{this._id}}" onclick="return confirm('Are you want to remove {{this.username}} from users?')"><i class="fas fa-trash"></i></a></td>
         </tr>
         {{/each}}
     </table>
