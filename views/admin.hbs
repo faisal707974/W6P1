@@ -1,17 +1,29 @@
 <div>
-    <div>
-        <h1>admin panel</h1>
+    <div  class="admin-panel-first-head">
+        <h1>Admin panel</h1>
     </div>
-<br>
-    <div>
-        <p><a href="/admin/logout">logout</a></p>
+    <div class="admin-panel-second-head">
+        <a href="/admin/addNewUser">Add new user</a>
+        <a href="/admin/logout">logout</a>
     </div>
 
+    <table class="users-table">
+
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {{#each users}}
+        <tr>
+            <td>{{username}}</td>
+            <td>{{password}}</td>
+            <td>{{email}}</td>
+            <td><a href=""><i class="fas fa-edit"></i></a></td>
+            <td><a href=""><i class="fas fa-trash"></i></a></td>
+        </tr>
+        {{/each}}
+    </table>
 </div>
-
-
-<div>
-    <a href="/admin/addNewUser">Add new user</a>
-</div>
-
-

@@ -8,7 +8,10 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   if(req.session.loggedIn){
-    res.render('admin',{title: "Admin",admin:true})
+    adminHelpers.getAllUsers().then((users)=>{
+      console.log(users)
+      res.render('admin',{title: "Admin",admin:true,users})
+    })
   }else{
     res.redirect('/admin/login')
   }

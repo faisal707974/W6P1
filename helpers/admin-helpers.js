@@ -23,7 +23,15 @@ module.exports={
 
     addUser : (userdata,callback)=>{
         db.get().collection('user').insertOne(userdata).then((data)=>{
+            console.log(data.insertedId)
             callback(true)
+        })
+    },
+
+    getAllUsers:()=>{
+        return new promise(async(resolve,reject)=>{
+            let users = await db.get().collection(collection.USER_COLLECTION).find().toArray()
+            resolve(users)
         })
     }
 
